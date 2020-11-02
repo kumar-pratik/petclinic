@@ -54,6 +54,7 @@ public interface PetRepository extends Repository<Pet, Integer> {
 	 * Save a {@link Pet} to the data store, either inserting or updating it.
 	 * @param pet the {@link Pet} to save
 	 */
+	@Transactional(readOnly = false)
 	void save(Pet pet);
 
 }
