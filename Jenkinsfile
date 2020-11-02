@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label 'Linux'
-    }
+    agent any
     environment {
         registry = 'pratik977/petclinic'
     }
