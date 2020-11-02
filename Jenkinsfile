@@ -13,7 +13,7 @@ pipeline {
         stage ('Testing......') {
             steps{
                 sh 'mvn test'
-                echo "##########Successfully tested###################"
+                echo "##########Successfully tested################"
             }
         }
         stage ('Packaging.......'){
