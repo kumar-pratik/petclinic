@@ -22,7 +22,7 @@ pipeline {
             }
         }
         stage ('Packaging.......'){
-            when { anyOf { branch 'master'; branch 'development' } }
+            when { anyOf { branch 'main'; branch 'development' } }
             steps{
                 sh 'mvn package'
                 archiveArtifacts artifacts: 'target/*.jar', fingerprint: true, followSymlinks: false, onlyIfSuccessful: true
