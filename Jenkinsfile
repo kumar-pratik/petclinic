@@ -27,7 +27,7 @@ pipeline {
         }
         stage ('Deploy.........'){
             when {
-                branch 'master'
+                branch 'main'
             }
             stages{
                 stage('Image Build.......') {
