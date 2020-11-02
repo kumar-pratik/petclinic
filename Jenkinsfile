@@ -1,7 +1,13 @@
 pipeline {
-    agent any
+    agent {
+        label 'Linux'
+    }
     environment {
         registry = 'pratik977/petclinic'
+    }
+    
+    tools { 
+        maven 'Maven 3.6.0' 
     }
     stages {
         stage ('Compilation.....') {
