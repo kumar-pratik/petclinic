@@ -81,7 +81,7 @@
       <artifactId>mysql-connector-java</artifactId>
       <scope>runtime</scope>
     </dependency>
-
+    
     <!-- caching -->
     <dependency>
       <groupId>javax.cache</groupId>
