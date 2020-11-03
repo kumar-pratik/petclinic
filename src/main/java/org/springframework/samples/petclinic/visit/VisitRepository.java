@@ -43,6 +43,7 @@ public interface VisitRepository extends Repository<Visit, Integer> {
 	@Transactional(readOnly = false)
 	void save(Visit visit) throws DataAccessException;
 
+	@Transactional(readOnly = true)
 	List<Visit> findByPetId(Integer petId);
 
 }
