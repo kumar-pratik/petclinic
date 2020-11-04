@@ -15,10 +15,9 @@
         spec:
           selector:
             app: petclinic
-          type: NodePort
+          type: LoadBalancer
           ports:
-          - nodePort: 31000
-            targetPort: 8080
+          - targetPort: 8080
             port: 8080
         
   - name: Create a Deployment
