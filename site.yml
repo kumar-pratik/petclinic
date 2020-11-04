@@ -15,7 +15,6 @@
         spec:
           selector:
             app: petclinic
-          type: LoadBalancer
           ports:
           - targetPort: 8080
             port: 8080
