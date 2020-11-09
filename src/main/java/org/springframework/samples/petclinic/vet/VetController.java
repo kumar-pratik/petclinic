@@ -36,7 +36,7 @@ class VetController {
 		this.vets = clinicService;
 	}
 
-	@GetMapping("/vets.html")
+	@GetMapping("/petclinic/vets.html")
 	public String showVetList(Map<String, Object> model) {
 		// Here we are returning an object of type 'Vets' rather than a collection of Vet
 		// objects so it is simpler for Object-Xml mapping
@@ -46,7 +46,7 @@ class VetController {
 		return "vets/vetList";
 	}
 
-	@GetMapping({ "/vets" })
+	@GetMapping({ "/petclinic/vets" })
 	public @ResponseBody Vets showResourcesVetList() {
 		// Here we are returning an object of type 'Vets' rather than a collection of Vet
 		// objects so it is simpler for JSon/Object mapping

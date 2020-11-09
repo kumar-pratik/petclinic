@@ -31,7 +31,7 @@ import java.util.Collection;
  * @author Arjen Poutsma
  */
 @Controller
-@RequestMapping("/owners/{ownerId}")
+@RequestMapping("/petclinic/owners/{ownerId}")
 class PetController {
 
 	private static final String VIEWS_PETS_CREATE_OR_UPDATE_FORM = "pets/createOrUpdatePetForm";
@@ -85,7 +85,7 @@ class PetController {
 		}
 		else {
 			this.pets.save(pet);
-			return "redirect:/owners/{ownerId}";
+			return "redirect:/petclinic/owners/{ownerId}";
 		}
 	}
 
@@ -106,7 +106,7 @@ class PetController {
 		else {
 			owner.addPet(pet);
 			this.pets.save(pet);
-			return "redirect:/owners/{ownerId}";
+			return "redirect:/petclinic/owners/{ownerId}";
 		}
 	}
 
