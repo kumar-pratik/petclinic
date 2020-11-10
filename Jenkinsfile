@@ -21,6 +21,12 @@ pipeline {
                 echo "Successfully tested"
             }
         }
+        stage('JaCoCo') {
+            steps {
+                echo 'Code Coverage'
+                jacoco()
+            }
+        }
         stage ('Packaging.......'){
             when { anyOf { branch 'main'; branch 'development' } }
             steps{
