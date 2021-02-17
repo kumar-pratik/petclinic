@@ -1,5 +1,7 @@
 FROM openjdk:8-alpine
 
+# Maintainer: Kumar Pratik
+
 WORKDIR /code
 
 COPY ./target/spring-petclinic-2.3.0.BUILD-SNAPSHOT.jar /code
